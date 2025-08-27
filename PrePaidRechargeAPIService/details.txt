@@ -1,0 +1,456 @@
+public class FetchPlanResponse{
+
+	public Data data {get;set;}
+}
+
+
+public class Data{
+
+	public List<object> TOPUP {get;set;}
+
+	public List<object> 3g/4g {get;set;}
+
+	public List<object> Roaming {get;set;}
+}
+
+public class Plans {
+
+	public string rs {get;set;}
+	
+}
+ 
+
+
+
+{
+    "data": {
+        "TOPUP": [
+            {
+                "rs": "10",
+                "desc": "Get Talktime of Rs. 7.47",
+                "validity": "N/A",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "120",
+                "desc": "Get Talktime of Rs. 98.69",
+                "validity": "N/A",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "500",
+                "desc": "Get Talktime of Rs. 423.73",
+                "validity": "N/A",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "1000",
+                "desc": "Get Talktime of Rs. 847.46",
+                "validity": "N/A",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "5000",
+                "desc": "Get Talktime of Rs. 4237.29",
+                "validity": "N/A",
+                "last_update": "21-08-2025"
+            }
+        ],
+        "3G/4G": [
+            {
+                "rs": "22",
+                "desc": "Get 1 GB Data.",
+                "validity": "1 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "26",
+                "desc": "Get 1.5 GB Data.",
+                "validity": "1 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "33",
+                "desc": "Get 2 GB Data.",
+                "validity": "1 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "49",
+                "desc": "Get Unlimited Data for 1 day. Note: Post 20GB usage per day data speed will be up to 64kbps.",
+                "validity": "1 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "77",
+                "desc": "Get 5 GB Data.",
+                "validity": "7 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "99",
+                "desc": "Get Unlimited Data for 2 days. Note: Post 20GB usage per day data speed will be up to 64kbps.",
+                "validity": "2 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "100",
+                "desc": "Get 5 GB Data + JioHotstar Mobile for 30 days (Watch Live sports, Movies, Exclusive Hotstar Specials & More).",
+                "validity": "30 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "121",
+                "desc": "Get 6 GB Data.",
+                "validity": "30 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "161",
+                "desc": "Get 12 GB Data.",
+                "validity": "30 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "181",
+                "desc": "Get 15 GB Data + Airtel Xstream Play Premium (includes 22+ OTTs), Enjoy 30 days full access to 22+ OTTs, Download the app and start enjoying top hits today.",
+                "validity": "30 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "195",
+                "desc": "Get 12 GB Data + JioHotstar Mobile for 1 months (Watch Live sports, Movies, Exclusive Hotstar Specials & More) + Airtel Xstream Play Premium (includes 22+ OTTs), Enjoy 30 days full access to 22+ OTTs, Download the app and start enjoying top hits today.",
+                "validity": "30 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "196",
+                "desc": "Get In-Flight 250 MB Data + 100 Mins OG, No incoming calls + 100 SMS (Selected INT Flight), for covered flights, visit www.airtel.in/IR.",
+                "validity": "1 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "279",
+                "desc": "Get 1 GB Data + Netflix Basic (Unlimited ad free movies, TV shows, and mobile games) + JioHotstar Super (Watch Live sports, Movies, Exclusive Hotstar Specials & More) + Zee5 Premium (Zee5 Premium subscription. Stream latest movies & series on multiple devices) + Airtel Xstream Play Premium (Enjoy full access to 25+ OTTs, Download the app and start enjoying top hits today).",
+                "validity": "30 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "295",
+                "desc": "Get In-Flight 500 MB Data + 100 Mins OG, No incoming calls + 100 SMS (Selected INT Flight), for covered flights, visit www.airtel.in/IR.",
+                "validity": "1 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "361",
+                "desc": "Get 50 GB Data.",
+                "validity": "30 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "398",
+                "desc": "Get Unlimited Local STD & Roaming calls + 2 GB/day Data + 100 SMS/Day + JioHotstar Subscription for 28 days (Watch Live sports, Movies, Exclusive Hotstar Specials & More) + Unlimited 5G Data (Unlimited 5G Data is over and above your plan limit and can be used in 5G Network areas only) + India&#39;s 1st Spam Fighting Network (Get Live Alerts as &#34;Airtel warning: SPAM&#34; on your phone for incoming spam calls and SMS) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "28 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "399",
+                "desc": "Get Unlimited Local STD & Roaming calls + 2.5 GB/Day Data + 100 SMS/Day + JioHotstar Mobile for 28 days (Watch Live sports, Movies, Exclusive Hotstar Specials & More) + Unlimited 5G Data (Unlimited 5G Data is over and above your plan limit and can be used in 5G Network areas only) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "28 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "449",
+                "desc": "Get Unlimited Local STD & Roaming calls + 3 GB/Day Data + 100 SMS/Day + Airtel Xstream Play Premium (includes 22+ OTTs), Enjoy 28 days full access to 22+ OTTs, Download the app and start enjoying top hits today + Unlimited 5G Data (Unlimited 5G Data is over and above your plan limit and can be used in 5G Network areas only) + India&#39;s 1st Spam Fighting Network (Get Live Alerts as &#34;Airtel warning: SPAM&#34; on your phone for incoming spam calls and SMS) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "28 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "589",
+                "desc": "Get Unlimited Local STD & Roaming calls + 50 GB Data + 300 SMS + India&#39;s 1st Spam Fighting Network (Get Live Alerts as &#34;Airtel warning: SPAM&#34; on your phone for incoming spam calls and SMS) + Watch free TV Shows, Movie, Live channels and much more. Download Airtel Xstream app to enjoy free content(premium subscription not included) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "30 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "595",
+                "desc": "Get In-Flight 1 GB Data + 100 Mins OG, No incoming calls + 100 SMS (Selected INT Flight), for covered flights, visit www.airtel.in/IR.",
+                "validity": "1 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "598",
+                "desc": "Get Unlimited Local STD & Roaming calls + 2 GB/Day Data + 100 SMS/Day + Netflix Basic + JioHotstar Super + ZEE5 Premium + Xstream Play Premium + Unlimited 5G Data (Unlimited 5G Data is over and above your plan limit and can be used in 5G Network areas only) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "28 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "609",
+                "desc": "Get Unlimited Local STD & Roaming calls + 60 GB Data + 300 SMS + India&#39;s 1st Spam Fighting Network (Get Live Alerts as &#34;Airtel warning: SPAM&#34; on your phone for incoming spam calls and SMS) + Watch free TV Shows, Movie, Live channels and much more. Download Airtel Xstream app to enjoy free content(premium subscription not included) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "30 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "838",
+                "desc": "Get Unlimited Local STD & Roaming calls + 3 GB/Day Data + 100 SMS/Day + Amazon Prime Lite (Enjoy Prime Video and Free 1 day delivery for 56 days included with your plan) + Unlimited 5G Data (Unlimited 5G Data is over and above your plan limit and can be used in 5G Network areas only) + Airtel Xstream Play Premium (includes 22+ OTTs), Enjoy 56 days full access to 22+ OTTs, Download the app and start enjoying top hits today + India&#39;s 1st Spam Fighting Network (Get Live Alerts as &#34;Airtel warning: SPAM&#34; on your phone for incoming spam calls and SMS) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "56 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "979",
+                "desc": "Get Unlimited Local STD & Roaming calls + 2 GB/Day Data + 100 SMS/Day + Airtel Xstream Play Premium (includes 22+ OTTs), Enjoy 84 days full access to 22+ OTTs, Download the app and start enjoying top hits today + Unlimited 5G Data (Unlimited 5G Data is over and above your plan limit and can be used in 5G Network areas only) + India&#39;s 1st Spam Fighting Network (Get Live Alerts as &#34;Airtel warning: SPAM&#34; on your phone for incoming spam calls and SMS) + RewardsMini Subscription (Earn Cashback of Rs 80 per month with no cost) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "84 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "1029",
+                "desc": "Get Unlimited Local STD & Roaming calls + 2 GB/Day Data + 100 SMS/Day + JioHotstar Mobile for 3 months (Subscription worth Rs 149. Watch Live Sports, Movies, Exclusive Hotstar Specials & more) + Unlimited 5G Data (Unlimited 5G Data is over and above your plan limit and can be used in 5G Network areas only) + India&#39;s 1st Spam Fighting Network (Get Live Alerts as &#34;Airtel warning: SPAM&#34; on your phone for incoming spam calls and SMS) + Watch free TV Shows, Movie, Live channels and much more. Download Airtel Xstream app to enjoy free content(premium subscription not included) + RewardsMini Subscription (Earn Cashback of Rs 80 per month with no cost) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "84 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "1199",
+                "desc": "Get Unlimited Local STD & Roaming calls + 2.5 GB/Day Data + 100 SMS/Day + Amazon Prime Lite (Enjoy Prime Video and Free 1 day delivery for 84 days included with your plan) + Unlimited 5G Data (Unlimited 5G Data is over and above your plan limit and can be used in 5G Network areas only) + Airtel Xstream Play Premium (includes 22+ OTTs), Enjoy 84 days full access to 22+ OTTs, Download the app and start enjoying top hits today + India&#39;s 1st Spam Fighting Network (Get Live Alerts as &#34;Airtel warning: SPAM&#34; on your phone for incoming spam calls and SMS) + RewardsMini Subscription (Earn Cashback of Rs 80 per month with no cost) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "84 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "1729",
+                "desc": "Get Unlimited Local STD & Roaming calls + 2 GB/Day Data + 100 SMS/Day + Netflix Basic + JioHotstar Super + ZEE5 Premium + Xstream Play Premium + Unlimited 5G Data (Unlimited 5G Data is over and above your plan limit and can be used in 5G Network areas only) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "84 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "1798",
+                "desc": "Get Unlimited Local STD & Roaming calls + 3 GB/Day Data + 100 SMS/Day + Netflix Basic (All device access, Unlimited entertainment) + Unlimited 5G Data (Unlimited 5G Data is over and above your plan limit and can be used in 5G Network areas only) + India&#39;s 1st Spam Fighting Network (Get Live Alerts as &#34;Airtel warning: SPAM&#34; on your phone for incoming spam calls and SMS) + Watch free TV Shows, Movie, Live channels and much more. Download Airtel Xstream app to enjoy free content(premium subscription not included) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "84 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "3599",
+                "desc": "Get Unlimited Local STD & Roaming calls + 2 GB/Day Data + 100 SMS/Day + Unlimited 5G Data (Unlimited 5G Data is over and above your plan limit and can be used in 5G Network areas only) + India&#39;s 1st Spam Fighting Network (Get Live Alerts as &#34;Airtel warning: SPAM&#34; on your phone for incoming spam calls and SMS) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "365 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "3999",
+                "desc": "Get Unlimited Local STD & Roaming calls + 2.5 GB/Day Data + 100 SMS/Day + JioHotstar Mobile for 1 Year (Subscription worth Rs 499. Watch Live Sports, Movies, Exclusive Hotstar Specials & more) + Unlimited 5G Data (Unlimited 5G Data is over and above your plan limit and can be used in 5G Network areas only) + India&#39;s 1st Spam Fighting Network(Get Live Alerts as &#34;Airtel warning: SPAM&#34; on your phone for incoming spam calls and SMS) + Watch free TV Shows, Movie, Live channels and much more. Download Airtel Xstream app to enjoy free content(premium subscription not included) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "365 days",
+                "last_update": "21-08-2025"
+            }
+        ],
+        "Romaing": [
+            {
+                "rs": "98",
+                "desc": "Get International roaming service activation. Free incoming SMS. Data/ Voice/ outgoing SMS at standard charges (USA, UK, Asia & more).",
+                "validity": "28 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "648",
+                "desc": "Get 1 GB Data + 100 Mins IC+OG (India + Local) + 10 SMS (Covers - USA, Europe, Gulf, Asia, Africa & More).",
+                "validity": "1 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "699",
+                "desc": "Get 2 GB Data (USA, Europe, Gulf, Asia, Africa & more).",
+                "validity": "N/A",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "798",
+                "desc": "Get 2 GB Data + 150 Mins IC+OG (India + Local) + 20 SMS (Covers - USA, Europe, Gulf, Asia, Africa & More).",
+                "validity": "5 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "1098",
+                "desc": "Get 3 GB Data + 200 Mins IC+OG (India + Local) + 20 SMS (Covers - USA, Europe, Gulf, Asia, Africa & More).",
+                "validity": "10 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "2998",
+                "desc": "Get 10 GB Data + 300 Mins IC+OG (India + Local) + 20 SMS (Covers - USA, Europe, Gulf, Asia, Africa & more).",
+                "validity": "30 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "4000",
+                "desc": "Get Benefits abroad- 5 GB Data + 100 Mins IC+OG (In+Local) + 100 SMS abroad + Benefits in india- 1.5GB/day + Unlimited calls + 100 SMS/day.",
+                "validity": "365 days",
+                "last_update": "21-08-2025"
+            }
+        ],
+        "COMBO": [
+            {
+                "rs": "22",
+                "desc": "Get 1 GB Data.",
+                "validity": "1 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "33",
+                "desc": "Get 2 GB Data.",
+                "validity": "1 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "49",
+                "desc": "Get Unlimited Data for 1 day. Note: Post 20GB usage per day data speed will be up to 64kbps.",
+                "validity": "1 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "189",
+                "desc": "Unlimited local STD & Roaming 1 GB data 21 days validity 300 SMS",
+                "validity": "21 days",
+                "last_update": "01-01-1970"
+            },
+            {
+                "rs": "199",
+                "desc": "Unlimited local, STD & Roaming 2 GB data 28 days validity 100 SMS per day",
+                "validity": "28 days",
+                "last_update": "01-01-1970"
+            },
+            {
+                "rs": "219",
+                "desc": "Get Unlimited Local STD & Roaming calls + 3 GB Data + 300 SMS + India&#39;s 1st Spam Fighting Network (Get Live Alerts as &#34;Airtel warning: SPAM&#34; on your phone for incoming spam calls and SMS) + Watch free TV Shows, Movie, Live channels and much more. Download Airtel Xstream app to enjoy free content(premium subscription not included) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "28 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "219",
+                "desc": "Get Unlimited Local STD & Roaming calls + 3 GB Data + 300 SMS + India&#39;s 1st Spam Fighting Network (Get Live Alerts as &#34;Airtel warning: SPAM&#34; on your phone for incoming spam calls and SMS) + Watch free TV Shows, Movie, Live channels and much more. Download Airtel Xstream app to enjoy free content(premium subscription not included) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "28 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "299",
+                "desc": "Get Unlimited Local STD & Roaming calls + 1 GB/Day Data + 100 SMS/Day + India&#39;s 1st Spam Fighting Network (Get Live Alerts as &#34;Airtel warning: SPAM&#34; on your phone for incoming spam calls and SMS) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "28 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "299",
+                "desc": "Get Unlimited Local STD & Roaming calls + 1 GB/Day Data + 100 SMS/Day + India&#39;s 1st Spam Fighting Network (Get Live Alerts as &#34;Airtel warning: SPAM&#34; on your phone for incoming spam calls and SMS) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "28 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "319",
+                "desc": "Get Unlimited Local STD & Roaming calls + 1.5 GB/Day Data + 100 SMS/Day.",
+                "validity": "30 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "319",
+                "desc": "Get Unlimited Local STD & Roaming calls + 1.5 GB/Day Data + 100 SMS/Day.",
+                "validity": "30 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "349",
+                "desc": "Get Unlimited Local STD & Roaming calls + 1.5 GB/Day Data + 100 SMS/Day + India&#39;s 1st Spam Fighting Network (Get Live Alerts as &#34;Airtel warning: SPAM&#34; on your phone for incoming spam calls and SMS) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "28 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "355",
+                "desc": "Get Unlimited Local STD & Roaming calls + 25 GB Data + 300 SMS + Talktime of Rs. 5 + India&#39;s 1st Spam Fighting Network (Get Live Alerts as &#34;Airtel warning: SPAM&#34; on your phone for incoming spam calls and SMS) + Watch free TV Shows, Movie, Live channels and much more. Download Airtel Xstream app to enjoy free content(premium subscription not included) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "30 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "379",
+                "desc": "Get Unlimited Local STD & Roaming calls + 2 GB/Day Data + 100 SMS/Day + Unlimited 5G Data (Unlimited 5G Data is over and above your plan limit and can be used in 5G Network areas only) + India&#39;s 1st Spam Fighting Network (Get Live Alerts as &#34;Airtel warning: SPAM&#34; on your phone for incoming spam calls and SMS) + Watch free TV Shows, Movie, Live channels and much more. Download Airtel Xstream app to enjoy free content(premium subscription not included) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "30 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "379",
+                "desc": "Get Unlimited Local STD & Roaming calls + 2 GB/Day Data + 100 SMS/Day + Unlimited 5G Data (Unlimited 5G Data is over and above your plan limit and can be used in 5G Network areas only) + India&#39;s 1st Spam Fighting Network (Get Live Alerts as &#34;Airtel warning: SPAM&#34; on your phone for incoming spam calls and SMS) + Watch free TV Shows, Movie, Live channels and much more. Download Airtel Xstream app to enjoy free content(premium subscription not included) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "30 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "409",
+                "desc": "Get Unlimited Local STD & Roaming calls + 2.5 GB Data/Day + 100 SMS/Day + Talktime of Rs. 5 + Unlimited 5G Data (Unlimited 5G Data is over and above your plan limit and can be used in 5G Network areas only) + Airtel Xstream Play Premium (includes 22+ OTTs), Enjoy 28 days full access to 22+ OTTs, Download the app and start enjoying top hits today + India&#39;s 1st Spam Fighting Network (Get Live Alerts as &#34;Airtel warning: SPAM&#34; on your phone for incoming spam calls and SMS) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "28 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "429",
+                "desc": "Get Unlimited Local STD & Roaming calls + 2.5 GB/Day Data + 100 SMS/Day + Talktime of Rs. 5 + Unlimited 5G Data (Unlimited 5G Data is over and above your plan limit and can be used in 5G Network areas only) + India&#39;s 1st Spam Fighting Network (Get Live Alerts as &#34;Airtel warning: SPAM&#34; on your phone for incoming spam calls and SMS) + Watch free TV Shows, Movie, Live channels and much more. Download Airtel Xstream app to enjoy free content(premium subscription not included) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "30 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "449",
+                "desc": "Get Unlimited Local STD & Roaming calls + 3 GB/Day Data + 100 SMS/Day + Airtel Xstream Play Premium (includes 22+ OTTs), Enjoy 28 days full access to 22+ OTTs, Download the app and start enjoying top hits today + Unlimited 5G Data (Unlimited 5G Data is over and above your plan limit and can be used in 5G Network areas only) + India&#39;s 1st Spam Fighting Network (Get Live Alerts as &#34;Airtel warning: SPAM&#34; on your phone for incoming spam calls and SMS) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "28 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "489",
+                "desc": "Get Unlimited Local STD & Roaming calls + 6 GB Data + 600 SMS + India&#39;s 1st Spam Fighting Network (Get Live Alerts as &#34;Airtel warning: SPAM&#34; on your phone for incoming spam calls and SMS) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "77 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "548",
+                "desc": "Get Unlimited Local STD & Roaming calls + 7 GB Data + 900 SMS + India&#39;s 1st Spam Fighting Network (Get Live Alerts as &#34;Airtel warning: SPAM&#34; on your phone for incoming spam calls and SMS) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "84 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "579",
+                "desc": "Get Unlimited Local STD & Roaming calls + 1.5 GB/Day Data + 100 SMS/Day + India&#39;s 1st Spam Fighting Network (Get Live Alerts as &#34;Airtel warning: SPAM&#34; on your phone for incoming spam calls and SMS) + Watch free TV Shows, Movie, Live channels and much more. Download Airtel Xstream app to enjoy free content(premium subscription not included) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "56 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "579",
+                "desc": "Get Unlimited Local STD & Roaming calls + 1.5 GB/Day Data + 100 SMS/Day + India&#39;s 1st Spam Fighting Network (Get Live Alerts as &#34;Airtel warning: SPAM&#34; on your phone for incoming spam calls and SMS) + Watch free TV Shows, Movie, Live channels and much more. Download Airtel Xstream app to enjoy free content(premium subscription not included) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "56 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "619",
+                "desc": "Get Unlimited Local STD & Roaming calls + 1.5 GB/Day Data + 100 SMS/Day + India&#39;s 1st Spam Fighting Network (Get Live Alerts as &#34;Airtel warning: SPAM&#34; on your phone for incoming spam calls and SMS) + Watch free TV Shows, Movie, Live channels and much more. Download Airtel Xstream app to enjoy free content(premium subscription not included) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "60 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "649",
+                "desc": "Get Unlimited Local STD & Roaming calls + 2 GB/Day Data + 100 SMS/Day + Unlimited 5G Data (Unlimited 5G Data is over and above your plan limit and can be used in 5G Network areas only) + India&#39;s 1st Spam Fighting Network(Get Live Alerts as &#34;Airtel warning: SPAM&#34; on your phone for incoming spam calls and SMS) + Watch free TV Shows, Movie, Live channels and much more. Download Airtel Xstream app to enjoy free content(premium subscription not included) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "56 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "799",
+                "desc": "Get Unlimited Local STD & Roaming calls + 1.5 GB/Day Data + 100 SMS/Day + India&#39;s 1st Spam Fighting Network (Get Live Alerts as &#34;Airtel warning: SPAM&#34; on your phone for incoming spam calls and SMS) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "77 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "859",
+                "desc": "Get Unlimited Local STD & Roaming calls + 1.5 GB/Day Data + 100 SMS/Day + India&#39;s 1st Spam Fighting Network (Get Live Alerts as &#34;Airtel warning: SPAM&#34; on your phone for incoming spam calls and SMS) + RewardsMini Subscription (Earn Cashback of Rs 80 per month with no cost) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "84 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "929",
+                "desc": "Get Unlimited Local STD & Roaming calls + 1.5 GB/Day Data + 100 SMS/Day + India&#39;s 1st Spam Fighting Network (Get Live Alerts as &#34;Airtel warning: SPAM&#34; on your phone for incoming spam calls and SMS) + Watch free TV Shows, Movie, Live channels and much more. Download Airtel Xstream app to enjoy free content(premium subscription not included) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "90 days",
+                "last_update": "21-08-2025"
+            },
+            {
+                "rs": "2249",
+                "desc": "Get Unlimited Local STD & Roaming calls + 30 GB Data + 3600 SMS + India&#39;s 1st Spam Fighting Network (Get Live Alerts as &#34;Airtel warning: SPAM&#34; on your phone for incoming spam calls and SMS) + Perplexity Pro AI (Enhance your search experience with a free subscription of Perplexity Pro AI worth Rs. 17000 for 12 months).",
+                "validity": "365 days",
+                "last_update": "21-08-2025"
+            }
+        ]
+    }
+}
