@@ -27,7 +27,7 @@ namespace PrePaidRechargeAPIService.Controllers
         {
             _logger.LogInformation($"FetchPlanAsync Log Information Started {JsonConvert.SerializeObject(request)}");
            
-            var resp=await _prepaidBL.fetchPlan(request);
+            var resp=await _prepaidBL.fetchPlanBL(request);
               _logger.LogInformation($"FetchPlanAsync Log Information Running {JsonConvert.SerializeObject(resp)}");
             
             // await Task.Delay();

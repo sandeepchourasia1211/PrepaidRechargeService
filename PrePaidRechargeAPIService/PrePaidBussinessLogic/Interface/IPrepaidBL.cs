@@ -7,7 +7,7 @@ namespace PrePaidRechargeAPIService.PrePaidBussinessLogic.Interface
 
 public interface IPrepaidBL
 {
-  public  Task<RechargePlanData> fetchPlan(FetchPlanMSRequest request);
+  public  Task<RechargePlanData> fetchPlanBL(FetchPlanMSRequest request);
 
 }
 }
