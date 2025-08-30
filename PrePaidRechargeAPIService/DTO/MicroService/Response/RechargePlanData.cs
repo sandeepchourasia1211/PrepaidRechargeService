@@ -1,11 +1,13 @@
 using System;
+using System.Text.Json.Serialization;
 
 namespace PrePaidRechargeAPIService.DTO.MicroService.Response
 {
 
 public class RechargePlanData
 {
-  public RechargeType data{ get; set; }
+  [JsonPropertyName("data")]
+  public RechargeType data { get; set; }
 
 }
 }

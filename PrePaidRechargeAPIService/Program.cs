@@ -1,6 +1,8 @@
 using Serilog;
 using PrePaidRechargeAPIService.PrePaidBussinessLogic.Interface;
 using PrePaidRechargeAPIService.PrePaidBussinessLogic.PrePaidImpl;
+using PrePaidRechargeAPIService.ClientService.Interface;
+using PrePaidRechargeAPIService.ClientService.ClientImpl;
 
 namespace PrePaidRechargeAPIService;
 
@@ -17,6 +19,7 @@ public class Program
         builder.Services.AddOpenApi();
         builder.Services.AddSwaggerGen();
         builder.Services.AddTransient<IPrepaidBL,PrepaidBLImpl>();
+        builder.Services.AddTransient<IClientService,PrePaidHttpClientImpl>();
 
         // Configure Serilog
         Log.Logger = new LoggerConfiguration()

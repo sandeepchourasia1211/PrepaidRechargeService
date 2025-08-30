@@ -6,15 +6,15 @@ namespace PrePaidRechargeAPIService.DTO.MicroService.Response
 
 public class RechargeType
 {
-  
-  public List<FetchPlanMsResponse> TopUp{ get; set; }
+    [JsonPropertyName("TOPUP")]
+  public List<FetchPlanMsResponse> TOPUP { get; set; }
 
-   [JsonPropertyName("3G/4G")]   // JSON key will be "3G/4G"
+  [JsonPropertyName("3G/4G")]
   public List<FetchPlanMsResponse> ThreeGFourG { get; set; }
-
-  public List<FetchPlanMsResponse> Roaming{ get; set; }
-  
-  public List<FetchPlanMsResponse> Combo{ get; set; }
+  [JsonPropertyName("Romaing")]
+  public List<FetchPlanMsResponse> Romaing { get; set; }
+  [JsonPropertyName("COMBO")]
+  public List<FetchPlanMsResponse> COMBO { get; set; }
 
   
 }

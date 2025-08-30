@@ -1,9 +1,11 @@
 using System;
+using System.Text.Json.Serialization;
 
 namespace PrePaidRechargeAPIService.DTO.ClientDTO.response;
 
 public class FetchPlanData
 {
-  public FetchPlanTypes data {get; set;}
+  [JsonPropertyName("data")]
+  public FetchPlanTypes data { get; set; }
   
 }
