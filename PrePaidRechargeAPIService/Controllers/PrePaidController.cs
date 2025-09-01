@@ -35,6 +35,33 @@ namespace PrePaidRechargeAPIService.Controllers
                 
         }
 
+        //Recharge Async
+        [HttpPost("RechargePlanAsync")]
+        public async Task<RechargeMsResponse> RechargePlanAsync(RechargeMSRequest request)
+        {
+            _logger.LogInformation($"RechargePlanAsync Log Information Started {JsonConvert.SerializeObject(request)}");
+
+            var resp = await _prepaidBL.rechargeBL(request);
+            _logger.LogInformation($"RechargePlanAsync Log Information Running {JsonConvert.SerializeObject(resp)}");
+
+            // await Task.Delay();
+            return resp;
+
+
+        }
+
+        //RechargeStatusAsuync
+         [HttpPost("RechargeStatusAsync")]
+        public async Task<RechargeStatusMSResponse> RechargeStatusMSAsync(RechargeStatusMSRequest request)
+        {
+            _logger.LogInformation($"RechargeStatusAsync Log Information Started {JsonConvert.SerializeObject(request)}");
+
+            var resp = await _prepaidBL.rechargeStatusBL(request);
+            _logger.LogInformation($"RechargeStatusAsync Log Information Running {JsonConvert.SerializeObject(resp)}");
+
+            // await Task.Delay();
+            return resp;
+        }
         
         [HttpGet("serializedeserialize")] 
         public async Task<IActionResult> serializeAndDeserializeAsync()

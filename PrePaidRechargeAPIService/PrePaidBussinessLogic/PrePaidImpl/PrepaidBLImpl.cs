@@ -28,17 +28,17 @@ namespace PrePaidRechargeAPIService.PrePaidBussinessLogic.PrePaidImpl
       _logger.LogInformation("PrepaidBLImpl : fetchPlan  ");
 
       FetchPlanRequest fetchPlanRequest = new FetchPlanRequest();
-      fetchPlanRequest.circle=request.CircleCode;
-      fetchPlanRequest.OperatorCode=request.OperatorCode;
-      fetchPlanRequest.Type=request.RechargeType;
+      fetchPlanRequest.circle = request.CircleCode;
+      fetchPlanRequest.OperatorCode = request.OperatorCode;
+      fetchPlanRequest.Type = request.RechargeType;
       fetchPlanRequest.username = "HR1413";
       fetchPlanRequest.password = "8368804637";
 
       var plan = await _clientService.fetchPlan(fetchPlanRequest);
-      
-      string result=JsonConvert.SerializeObject(plan);
-      
-      RechargePlanData rechargePlanData =JsonConvert.DeserializeObject<RechargePlanData>(result);
+
+      string result = JsonConvert.SerializeObject(plan);
+
+      RechargePlanData rechargePlanData = JsonConvert.DeserializeObject<RechargePlanData>(result);
       // return new RechargePlan=Data()
       // {
       //   data = new RechargeType()
@@ -51,5 +51,73 @@ namespace PrePaidRechargeAPIService.PrePaidBussinessLogic.PrePaidImpl
       // };
       return rechargePlanData;
     }
+    
+  //RechargeBL 
+    public async Task<RechargeMsResponse> rechargeBL(RechargeMSRequest request)
+    {
+      _logger.LogInformation("PrepaidBLImpl : rechargePlan  ");
+      RechargeMsResponse rechargeMsResponse = new RechargeMsResponse();
+      RechargePlanRequest rechargePlanRequest = new RechargePlanRequest();
+      rechargePlanRequest.circlecode = request.circlecode;
+      rechargePlanRequest.operatorcode = request.operatorcode;
+      rechargePlanRequest.amount = request.amount;
+      rechargePlanRequest.number = request.number;
+      rechargePlanRequest.utransactionId = request.utransactionId;
+      rechargePlanRequest.username = "HR1413";
+      rechargePlanRequest.password = "8368804637";
+
+      var plan = await _clientService.rechargeRequest(rechargePlanRequest);
+      rechargeMsResponse.Amount = plan.Amount;
+      rechargeMsResponse.Number = plan.Number;
+      rechargeMsResponse.Status = plan.Status;
+      rechargeMsResponse.ResponseMessage = plan.ResposneMessage;
+      rechargeMsResponse.MarginPercentage = plan.MarginPercentage;
+      rechargeMsResponse.UtransactionID = plan.UtransactionID;
+      rechargeMsResponse.TransactionID = plan.TransactionID;
+      rechargeMsResponse.MarginAmount = plan.MarginAmount;
+      rechargeMsResponse.ErrorCode = plan.ErrorCode.ToString();
+      rechargeMsResponse.OperatorID = plan.OperatorID;
+      // string result = JsonConvert.SerializeObject(plan);
+
+      // RechargeMsResponse rechargeResponse = JsonConvert.DeserializeObject<RechargeMsResponse>(result);
+
+      return rechargeMsResponse;
+    }
+
+    //RechargeStatusBL
+    public async Task<RechargeStatusMSResponse> rechargeStatusBL(RechargeStatusMSRequest request)
+    {
+
+      _logger.LogInformation("PrepaidBLImpl : rechargeStatus  ");
+      RechargeStatusMSResponse rechargeStatusMsResponse = new RechargeStatusMSResponse();
+      RechargeStatusRequest rechargeStatusRequest = new RechargeStatusRequest();
+
+      rechargeStatusRequest.utransactionid = request.utransactionid;
+      rechargeStatusRequest.gettransid = request.gettransid;
+      rechargeStatusRequest.operator_id=request.operator_id;
+      rechargeStatusRequest.username = "HR1413";
+      rechargeStatusRequest.password = "8368804637";
+
+
+      var plan = await _clientService.rechargeStatus(rechargeStatusRequest);
+
+      rechargeStatusMsResponse.UtransactionID=plan.UtransactionID;
+      rechargeStatusMsResponse.TransactionID = plan.TransactionID;
+      rechargeStatusMsResponse.OperatorID=plan.OperatorID;
+      rechargeStatusMsResponse.Number = plan.Number;
+      rechargeStatusMsResponse.Amount = plan.Amount;
+      rechargeStatusMsResponse.Status = plan.Status.ToString();
+      rechargeStatusMsResponse.ResposneMessage = plan.ResposneMessage;
+      rechargeStatusMsResponse.MarginPercentage = plan.MarginPercentage;
+      rechargeStatusMsResponse.MarginAmount=plan.MarginAmount;
+      rechargeStatusMsResponse.ErrorCode=plan.ErrorCode;
+
+      return rechargeStatusMsResponse;
+    }
+
+    
+
+
+
   }
 }
