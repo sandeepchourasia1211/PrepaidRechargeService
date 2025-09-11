@@ -94,25 +94,26 @@ namespace PrePaidRechargeAPIService.PrePaidBussinessLogic.PrePaidImpl
 
       rechargeStatusRequest.utransactionid = request.utransactionid;
       rechargeStatusRequest.gettransid = request.gettransid;
-      rechargeStatusRequest.operator_id=request.operator_id;
+      rechargeStatusRequest.operator_id = request.operator_id;
       rechargeStatusRequest.username = "HR1413";
       rechargeStatusRequest.password = "8368804637";
 
 
       var plan = await _clientService.rechargeStatus(rechargeStatusRequest);
 
-      rechargeStatusMsResponse.UtransactionID=plan.UtransactionID;
+      rechargeStatusMsResponse.UtransactionID = plan.UtransactionID;
       rechargeStatusMsResponse.TransactionID = plan.TransactionID;
-      rechargeStatusMsResponse.OperatorID=plan.OperatorID;
+      rechargeStatusMsResponse.OperatorID = plan.OperatorID;
       rechargeStatusMsResponse.Number = plan.Number;
       rechargeStatusMsResponse.Amount = plan.Amount;
       rechargeStatusMsResponse.Status = plan.Status.ToString();
       rechargeStatusMsResponse.ResposneMessage = plan.ResposneMessage;
       rechargeStatusMsResponse.MarginPercentage = plan.MarginPercentage;
-      rechargeStatusMsResponse.MarginAmount=plan.MarginAmount;
-      rechargeStatusMsResponse.ErrorCode=plan.ErrorCode;
+      rechargeStatusMsResponse.MarginAmount = plan.MarginAmount;
+      rechargeStatusMsResponse.ErrorCode = plan.ErrorCode;
 
       return rechargeStatusMsResponse;
+      
     }
 
     
